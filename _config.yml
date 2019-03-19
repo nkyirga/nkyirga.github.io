@@ -11,7 +11,7 @@ github_username:  nkyirga
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-architect
+theme: minima
 plugins:
   - jekyll-feed
 
