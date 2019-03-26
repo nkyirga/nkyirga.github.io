@@ -1,12 +1,3 @@
 ---
-title: Front Page
-layout: default
+layout: home
 ---
-
-# {{ page.title}}
-
-Bla-bla
-
-<!--
-Comment
--->
