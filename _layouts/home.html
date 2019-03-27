@@ -11,6 +11,19 @@ layout: default
 
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Projects" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+	<h3>
+	  <a class="post-link" href="{{post.url | relatice_url}}">
+	    {{ post.title | escape }}
+	  </a>
+	</h3>
+	{%- if site.show_excerpts -%}
+	  {{ post.excerpt }}
+	{%- endif -%}
+      </li>
+      {%- endfor -%}
   {%- endif -%}
 
 </div>
